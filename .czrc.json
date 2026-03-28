@@ -1,0 +1,13 @@
+{
+  "cz-git": {
+    "prompt": {
+      "useEmoji": true,
+      "messages": {
+        "type": "Select the type of change:",
+        "scope": "Enter scope (optional)",
+        "subject": "Write a short description:",
+        "body": "Provide a longer description (Press Enter for new line, CTRL+D to finish):"
+      }
+    }
+  }
+}
