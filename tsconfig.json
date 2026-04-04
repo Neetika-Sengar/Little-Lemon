@@ -1,0 +1,12 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
