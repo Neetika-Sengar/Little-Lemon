@@ -1,0 +1,28 @@
+.header {
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktopNavigation {
+  display: none;
+}
+
+.logo {
+  display: inline-block;
+  cursor: pointer;
+}
+.logo.spin:hover {
+  animation: spin 0.3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(0.8);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
