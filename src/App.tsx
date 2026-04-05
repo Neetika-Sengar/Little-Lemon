@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './layout/Header/Header';
-import Footer from './layout/Footer';
+import Footer from './layout/Footer/Footer';
 import { lazy, Suspense } from 'react';
 import { useState } from 'react';
 import Confetti from 'react-confetti';
