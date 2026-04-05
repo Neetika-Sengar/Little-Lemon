@@ -1,7 +1,8 @@
 import { Button } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const DodgeButton: React.FC = () => {
+const DodgeButton: React.FC<{ path: string }> = ({ path = '/' }) => {
   const taunts = [
     'Catch me 😏',
     'too slow 😏',
@@ -48,7 +49,7 @@ const DodgeButton: React.FC = () => {
   };
 
   return (
-    <div>
+    <Link to={path}>
       <Button
         variant="contained"
         ref={btnRef}
@@ -68,7 +69,7 @@ const DodgeButton: React.FC = () => {
       >
         {text}
       </Button>
-    </div>
+    </Link>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Button as ButtonComponent } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 interface ButtonProps {
   label: string;
@@ -13,6 +14,7 @@ interface ButtonProps {
     | 'info'
     | 'warning';
   onClick?: () => void;
+  path?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,19 +22,22 @@ const Button: React.FC<ButtonProps> = ({
   label,
   variant = 'text',
   color = 'success',
+  path = '/',
   onClick,
 }: ButtonProps) => {
   return (
-    <ButtonComponent
-      className="loginButton"
-      variant={variant}
-      size="medium"
-      color={color}
-      disabled={disabled}
-      onClick={onClick}
-    >
-      {label}
-    </ButtonComponent>
+    <Link to={path}>
+      <ButtonComponent
+        className="loginButton"
+        variant={variant}
+        size="medium"
+        color={color}
+        disabled={disabled}
+        onClick={onClick}
+      >
+        {label}
+      </ButtonComponent>
+    </Link>
   );
 };
 
