@@ -3,6 +3,7 @@ import Button from '../components/Button/Button';
 import { Helmet } from 'react-helmet-async';
 import content from '../assets/locales/en.json';
 import './Homepage.scss';
+
 type HomePageProps = { slayMode: boolean };
 
 const HomePage: React.FC<HomePageProps> = ({ slayMode }) => {

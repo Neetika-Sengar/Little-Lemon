@@ -14,6 +14,10 @@ const AboutPage = () => {
           content={content.aboutPageMetaDescription}
         />
         <meta property="og:image" content="/logo.png" />
+        <meta
+          property="og:url"
+          content="https://little-lemon-capstone-project.io/aboutus"
+        />
       </Helmet>
 
       <div>

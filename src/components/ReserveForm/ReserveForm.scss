@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 80&;
+  margin: 0 auto;
+  align-items: center;
+
+  .halfGrouping {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    justify-content: space-between;
+
+    .fieldGroup {
+      width: 100%;
+      height: max-content;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input,
+    select {
+      width: 100%;
+      height: inherit;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.success {
+  font-weight: bold;
+  margin: 0.25rem 0 0 0;
+  font-size: large;
+}
+
+.error {
+  font-weight: bold;
+  margin: 0.25rem 0 0 0;
+  font-size: small;
+  color: red;
+}
+
+.success {
+  color: green;
+}

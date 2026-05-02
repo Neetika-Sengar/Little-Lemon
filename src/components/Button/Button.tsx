@@ -15,9 +15,11 @@ interface ButtonProps {
     | 'warning';
   onClick?: () => void;
   path?: string;
+  type?: 'button' | 'submit';
 }
 
 const Button: React.FC<ButtonProps> = ({
+  type = 'button',
   disabled,
   label,
   variant = 'text',
@@ -25,20 +27,21 @@ const Button: React.FC<ButtonProps> = ({
   path = '/',
   onClick,
 }: ButtonProps) => {
-  return (
-    <Link to={path}>
-      <ButtonComponent
-        className="loginButton"
-        variant={variant}
-        size="medium"
-        color={color}
-        disabled={disabled}
-        onClick={onClick}
-      >
-        {label}
-      </ButtonComponent>
-    </Link>
+  const button = (
+    <ButtonComponent
+      type={type}
+      className="loginButton"
+      variant={variant}
+      size="medium"
+      color={color}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {label}
+    </ButtonComponent>
   );
+
+  return type == 'submit' ? button : <Link to={path}>button</Link>;
 };
 
 export default Button;

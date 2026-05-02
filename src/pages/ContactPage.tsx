@@ -15,6 +15,10 @@ const ContactPage = () => {
           content={content.contactPageMetaDescription}
         />
         <meta property="og:image" content="/logo.png" />
+        <meta
+          property="og:url"
+          content="https://little-lemon-capstone-project.io/contactus"
+        />
       </Helmet>
 
       <div>

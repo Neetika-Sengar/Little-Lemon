@@ -39,6 +39,7 @@
   "allFieldsRequired": "All fields are required.",
   "backToHomepage": "Back to Homepage",
   "dateRequired": "Please select a date.",
+  "noPastDate": "Cannot be in the past.",
   "timeRequired": "Please select a time.",
   "numberOfPeopleRequired": "Please specify the number of people.",
   "nameRequired": "Please enter your name.",
@@ -47,9 +48,9 @@
   "invalidEmail": "Please enter a valid email address.",
   "invalidNumberOfPeople": "Please enter a valid number of people.",
   "datePlaceholder": "DD/MM/YYYY",
-  "dinersPlaceholder": "4",
-  "namePlaceholder": "John Doe",
-  "emailPlaceholder": "johndoe@example.com",
+  "dinersPlaceholder": "1",
+  "namePlaceholder": "Jane Doe",
+  "emailPlaceholder": "janedoe@example.com",
   "phonePlaceholder": "+123456789",
   "callUs": "Call Us"
 }
